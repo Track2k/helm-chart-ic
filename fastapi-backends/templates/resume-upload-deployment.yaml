@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-resume-upload
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: {{ .Values.services.resume_upload.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-resume-upload
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-resume-upload
+    spec:
+      containers:
+      - name: resume-upload-container
+        image: {{ .Values.services.resume_upload.image }}
+        imagePullPolicy: {{ .Values.services.resume_upload.imagePullPolicy }}
+        ports:
+        - containerPort: {{ .Values.services.resume_upload.port }}
