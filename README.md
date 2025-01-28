@@ -29,6 +29,8 @@ kubectl port-forward svc/fastapi-resume-upload 8003:8003 -n prod
 
 Make sure to adjust the port forwarding command for other services as needed.
 
-## Download the Tarball
+## Access fastapi swaggerUI
 
-You can download the tarball of the Helm chart to install it on your cluster.
+```sh
+https://localhost:8003/docs
+```
