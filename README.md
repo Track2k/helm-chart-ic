@@ -32,5 +32,5 @@ Make sure to adjust the port forwarding command for other services as needed.
 ## Access fastapi swaggerUI
 
 ```sh
-https://localhost:8003/docs
+localhost:8003/docs
 ```
