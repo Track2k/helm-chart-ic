@@ -4,8 +4,6 @@ This is my first Helm chart created as part of my Helm learning journey. The cha
 
 ## Clone the Repository
 
-First, clone the repository:
-
 ```sh
 git clone https://github.com/Track2k/helm-chart-ic.git
 cd helm-chart-ic
@@ -16,7 +14,8 @@ cd helm-chart-ic
 To install the chart on your cluster, use the following command:
 
 ```sh
-helm install fastapi fastapi-backends-0.1.0.tgz -n prod --create-namespace
+helm repo add manjunath-fastapis http://helm-repo.manjunath.cloud 
+helm install fastapi-v1 manjunath-fastapis/fastapi-backends -n prod --create-namespace
 ```
 
 ## Port Forwarding
