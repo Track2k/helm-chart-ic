@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  fastapi-backends:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-02-06T12:10:57.658808139+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 0ccb26d49435f9c405224982db4183d0fcae942083b3551c71ffca98e1c4a13c
+    name: fastapi-backends
+    type: application
+    urls:
+    - fastapi-backends-0.1.0.tgz
+    version: 0.1.0
+  manjunath-backends:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-02-06T12:10:57.658937431+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 914876f57c24d51293a4d7b85a610d5d9505d0a7b22511f82c61b2e7426b5571
+    name: manjunath-backends
+    type: application
+    urls:
+    - manjunath-backends-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-02-06T12:10:57.65855834+05:30"
