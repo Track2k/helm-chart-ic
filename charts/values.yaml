@@ -1,0 +1,25 @@
+namespace: prod
+services:
+  resume_upload:
+    replicaCount: 1
+    image: "tracktwok/resume-upload-api"
+    tag: "latest"
+    port: 8003
+    NodePort: 30003
+    PullPolicy: "Always"
+
+  jd_upload:
+    replicaCount: 1
+    image: "tracktwok/jd-upload-api"
+    tag: "latest"
+    port: 8004
+    NodePort: 30004
+    PullPolicy: "Always"
+
+  intermediate_master:
+    replicaCount: 1
+    image: "tracktwok/intermediate-api"
+    tag: "latest"
+    port: 8005
+    NodePort: 30005
+    PullPolicy: "Always"
