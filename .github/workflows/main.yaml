@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0 
 
-      -name: setup git config
+      - name: setup git config
         run: |
           git config --global user.email "github-actions@users.noreply.github.com"
           git config --global user.name "github-actions"
