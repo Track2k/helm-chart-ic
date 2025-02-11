@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'charts/**'
+      - 'charts/fast-api-backends/Chart.yaml'
 
 jobs:
   release:
