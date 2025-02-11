@@ -14,7 +14,7 @@ spec:
         app: {{ .Release.Name }}-intermediate-master
     spec:
       containers:
-      - name: intermediate-master-container
+      - name: intermediate-master-container #docker image
         image: {{ .Values.services.intermediate_master.image }}
         imagePullPolicy: {{ .Values.services.intermediate_master.imagePullPolicy }}
         ports:
