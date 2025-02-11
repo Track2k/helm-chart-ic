@@ -8,5 +8,5 @@ spec:
     app: {{ .Release.Name }}-jd-upload
   ports:
   - protocol: TCP
-    port: {{ .Values.services.jd_upload.port }}
-    targetPort: {{ .Values.services.jd_upload.port }}
+    port: {{ .Values.services.jd_upload.port }} # Service port
+    targetPort: {{ .Values.services.jd_upload.port }} # Container port
