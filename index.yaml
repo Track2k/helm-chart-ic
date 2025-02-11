@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  fastapi-backends:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-02-11T09:06:32.76576495Z"
+    description: A Helm chart for Kubernetes to deploy FastAPI backends which consists
+      of applications that require a mysql database.
+    digest: 6a97db9a127883392036af357df99e40c60f47a11ad503f1b09b4af6f690d3d0
+    name: fastapi-backends
+    urls:
+    - https://github.com/Track2k/helm-chart-ic/releases/download/fastapi-backends-0.1.11/fastapi-backends-0.1.11.tgz
+    version: 0.1.11
+generated: "2025-02-11T09:06:32.76577011Z"
