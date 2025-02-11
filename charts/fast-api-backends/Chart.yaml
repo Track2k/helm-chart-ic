@@ -1,5 +1,5 @@
 apiVersion: v2
 name: fastapi-backends
 description: A Helm chart for Kubernetes to deploy FastAPI backends which consists of applications that require a mysql database.
-version: 0.1.5
+version: 0.1.6
 appVersion: "1.0.1"
