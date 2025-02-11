@@ -7,6 +7,11 @@ on:
     paths:
       - 'charts/**'
 
+permissions:
+  contents: write    
+  pages: write      
+  id-token: write   
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -18,8 +23,8 @@ jobs:
 
       - name: setup git config
         run: |
-          git config --global user.email "manjunath809511@gmail.com"
-          git config --global user.name "Manjunath"
+          git config --global user.email "$GITHUB_ACTOR"
+          git config --global user.name "$GITHUB_ACTOR@users.noreply.github.com"
 
       - name: Package and Release
         uses: helm/chart-releaser-action@v1.7.0
